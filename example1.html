@@ -4,8 +4,29 @@
 
     <!-- script tag is where Javascript goes to -->
     <script>
-        for(var i = 0; i < 400; i++) {
-            console.log("This round is " + i);
+        let people = [
+            {
+                firstName:"Inkeri",
+                lastName:"Sandberg",
+                age:33,
+                eyeColor:"blue"
+            },
+            {
+                firstName:"Teemu",
+                lastName:"Vanttaja",
+                age:35,
+                eyeColor:"blue"
+            },
+            {
+                firstName:"Sanni",
+                lastName:"Vanttaja",
+                age:2,
+                eyeColor:"blue"
+            }
+        ]
+
+        for (let item in people) {
+            console.log(`${people[item].firstName} ${people[item].lastName}`);
         }
     </script>
 
